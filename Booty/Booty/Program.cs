@@ -11,12 +11,22 @@ namespace Booty
 {
     class Program
     {
+        static PowerUp health;
+        static PowerUp ammo;
+
         static void Main(string[] args)
         {
-            string myString = "Hello, world!";
-            WriteLine(myString);
+            health = new PowerUp();
+            ammo = new PowerUp();
+
+
+
+
+            pu.RunPowerUp();
 
             ReadKey();
+
+
         }
     }
 }

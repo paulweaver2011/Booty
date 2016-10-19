@@ -11,21 +11,16 @@ namespace Booty
 {
     class Program
     {
-        static PowerUp health;
-        static PowerUp ammo;
+        public static PowerUP brutalDildo;
+        public static PowerUP violentStrangulation;
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            health = new PowerUp();
-            ammo = new PowerUp();
-
-
-
-
-            pu.RunPowerUp();
-
-            ReadKey();
-
+            brutalDildo = new PowerUP();
+            violentStrangulation = new PowerUP();
+            brutalDildo.runPowerUp();
+            violentStrangulation.runDurationExtender();
+            Console.ReadKey();
 
         }
     }

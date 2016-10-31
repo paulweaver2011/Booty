@@ -13,6 +13,7 @@ namespace Poots_And_The_Noodle_Caboodle
             loveGun.Fire();
         }
 
+        public WeaponBase unarmed = new WeaponBase();
         public WeaponBase loveGun = new WeaponBase();
         public WeaponBase rapeTentacle = new WeaponBase();
         public WeaponBase violentTriangulation = new WeaponBase();

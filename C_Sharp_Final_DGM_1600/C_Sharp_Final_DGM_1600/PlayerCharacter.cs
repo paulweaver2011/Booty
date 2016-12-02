@@ -11,21 +11,21 @@ namespace C_Sharp_Final_DGM_1600
         //Character stats
             
         //Life
-        int vim = 0;
+        int vim = 10;
         //Magic
-        int pith = 0;
+        int pith = 10;
         //Strength
-        int vigor = 0;
+        int vigor = 10;
         //Endurance
-        int grit = 0;
+        int grit = 10;
         //Speed
-        int whiz = 0;
+        int whiz = 10;
         //Charisma
-        int allure = 0;
+        int allure = 10;
         //Intelligence
-        int wit = 0;
+        int wit = 10;
         //Wisdom
-        int grasp = 0;
+        int grasp = 10;
         
 
         //Equipment

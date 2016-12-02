@@ -14,11 +14,11 @@ namespace C_Sharp_Final_DGM_1600
     {
         private PlayerCharacter wystan;
         
-
         public C_Sharp_Final()
         {
             InitializeComponent();
             PlayerCharacter wystan = new PlayerCharacter();
+
         }
 
         //About message box displays developer information
@@ -57,7 +57,17 @@ namespace C_Sharp_Final_DGM_1600
         /// <param name="e"></param>
         private void BtnFlailAbout_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"{wystan.Charm}");
+            TxtBoxMain.Text = ("You flail about helplessly!");
+        }
+
+        private void MnuSoundsButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void onToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

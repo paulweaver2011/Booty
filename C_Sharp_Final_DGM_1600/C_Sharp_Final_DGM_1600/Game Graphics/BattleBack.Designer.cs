@@ -38,6 +38,8 @@
             this.MnuContinueGameButton = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuSettingsDropDown = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuSoundsButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.BtnSoundOn = new System.Windows.Forms.ToolStripMenuItem();
+            this.BtnSoundOff = new System.Windows.Forms.ToolStripMenuItem();
             this.PBoxBackground = new System.Windows.Forms.PictureBox();
             this.BtnAttack = new System.Windows.Forms.Button();
             this.BtnDefend = new System.Windows.Forms.Button();
@@ -122,9 +124,26 @@
             // 
             // MnuSoundsButton
             // 
+            this.MnuSoundsButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.BtnSoundOn,
+            this.BtnSoundOff});
             this.MnuSoundsButton.Name = "MnuSoundsButton";
-            this.MnuSoundsButton.Size = new System.Drawing.Size(108, 22);
+            this.MnuSoundsButton.Size = new System.Drawing.Size(152, 22);
             this.MnuSoundsButton.Text = "Sound";
+            this.MnuSoundsButton.Click += new System.EventHandler(this.MnuSoundsButton_Click);
+            // 
+            // BtnSoundOn
+            // 
+            this.BtnSoundOn.Name = "BtnSoundOn";
+            this.BtnSoundOn.Size = new System.Drawing.Size(152, 22);
+            this.BtnSoundOn.Text = "On";
+            this.BtnSoundOn.Click += new System.EventHandler(this.onToolStripMenuItem_Click);
+            // 
+            // BtnSoundOff
+            // 
+            this.BtnSoundOff.Name = "BtnSoundOff";
+            this.BtnSoundOff.Size = new System.Drawing.Size(152, 22);
+            this.BtnSoundOff.Text = "Off";
             // 
             // PBoxBackground
             // 
@@ -281,6 +300,8 @@
         private System.Windows.Forms.PictureBox PBoxMonster3;
         private System.Windows.Forms.PictureBox PBoxMonster2;
         private System.Windows.Forms.TextBox TxtBoxMain;
+        private System.Windows.Forms.ToolStripMenuItem BtnSoundOn;
+        private System.Windows.Forms.ToolStripMenuItem BtnSoundOff;
     }
 }
 

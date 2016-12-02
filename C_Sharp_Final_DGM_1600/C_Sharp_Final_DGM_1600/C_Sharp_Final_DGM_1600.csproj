@@ -52,6 +52,7 @@
     <Compile Include="Game Graphics\BattleBack.Designer.cs">
       <DependentUpon>BattleBack.cs</DependentUpon>
     </Compile>
+    <Compile Include="Game Graphics\Combat.cs" />
     <Compile Include="PlayerCharacter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

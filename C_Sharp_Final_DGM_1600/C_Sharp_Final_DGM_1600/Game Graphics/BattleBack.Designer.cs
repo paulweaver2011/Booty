@@ -1,6 +1,6 @@
 ﻿namespace C_Sharp_Final_DGM_1600
 {
-    partial class Form1
+    partial class C_Sharp_Final
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(C_Sharp_Final));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.MnuExitDropDown = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuAboutButton = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,6 +47,7 @@
             this.PBoxMonster1 = new System.Windows.Forms.PictureBox();
             this.PBoxMonster3 = new System.Windows.Forms.PictureBox();
             this.PBoxMonster2 = new System.Windows.Forms.PictureBox();
+            this.TxtBoxMain = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PBoxBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBoxMonster1)).BeginInit();
@@ -62,7 +63,7 @@
             this.MnuSettingsDropDown});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1184, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1194, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -127,27 +128,29 @@
             // 
             // PBoxBackground
             // 
+            this.PBoxBackground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.PBoxBackground.Image = ((System.Drawing.Image)(resources.GetObject("PBoxBackground.Image")));
             this.PBoxBackground.Location = new System.Drawing.Point(12, 27);
             this.PBoxBackground.Name = "PBoxBackground";
-            this.PBoxBackground.Size = new System.Drawing.Size(1159, 478);
+            this.PBoxBackground.Size = new System.Drawing.Size(1160, 391);
             this.PBoxBackground.TabIndex = 1;
             this.PBoxBackground.TabStop = false;
             // 
             // BtnAttack
             // 
             this.BtnAttack.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAttack.Location = new System.Drawing.Point(12, 511);
+            this.BtnAttack.Location = new System.Drawing.Point(12, 523);
             this.BtnAttack.Name = "BtnAttack";
             this.BtnAttack.Size = new System.Drawing.Size(227, 111);
             this.BtnAttack.TabIndex = 2;
             this.BtnAttack.Text = "Attack";
             this.BtnAttack.UseVisualStyleBackColor = true;
+            this.BtnAttack.Click += new System.EventHandler(this.BtnAttack_Click);
             // 
             // BtnDefend
             // 
             this.BtnDefend.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDefend.Location = new System.Drawing.Point(245, 511);
+            this.BtnDefend.Location = new System.Drawing.Point(245, 523);
             this.BtnDefend.Name = "BtnDefend";
             this.BtnDefend.Size = new System.Drawing.Size(227, 111);
             this.BtnDefend.TabIndex = 4;
@@ -157,7 +160,7 @@
             // BtnMagic
             // 
             this.BtnMagic.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMagic.Location = new System.Drawing.Point(478, 511);
+            this.BtnMagic.Location = new System.Drawing.Point(478, 523);
             this.BtnMagic.Name = "BtnMagic";
             this.BtnMagic.Size = new System.Drawing.Size(227, 111);
             this.BtnMagic.TabIndex = 5;
@@ -167,7 +170,7 @@
             // BtnItem
             // 
             this.BtnItem.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnItem.Location = new System.Drawing.Point(711, 511);
+            this.BtnItem.Location = new System.Drawing.Point(711, 523);
             this.BtnItem.Name = "BtnItem";
             this.BtnItem.Size = new System.Drawing.Size(227, 111);
             this.BtnItem.TabIndex = 6;
@@ -177,19 +180,20 @@
             // BtnFlailAbout
             // 
             this.BtnFlailAbout.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnFlailAbout.Location = new System.Drawing.Point(944, 511);
+            this.BtnFlailAbout.Location = new System.Drawing.Point(944, 523);
             this.BtnFlailAbout.Name = "BtnFlailAbout";
             this.BtnFlailAbout.Size = new System.Drawing.Size(227, 111);
             this.BtnFlailAbout.TabIndex = 7;
             this.BtnFlailAbout.Text = "Flail About";
             this.BtnFlailAbout.UseVisualStyleBackColor = true;
+            this.BtnFlailAbout.Click += new System.EventHandler(this.BtnFlailAbout_Click);
             // 
             // PBoxMonster1
             // 
             this.PBoxMonster1.BackColor = System.Drawing.Color.Transparent;
             this.PBoxMonster1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PBoxMonster1.BackgroundImage")));
             this.PBoxMonster1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PBoxMonster1.Location = new System.Drawing.Point(478, 55);
+            this.PBoxMonster1.Location = new System.Drawing.Point(478, 39);
             this.PBoxMonster1.Name = "PBoxMonster1";
             this.PBoxMonster1.Size = new System.Drawing.Size(227, 334);
             this.PBoxMonster1.TabIndex = 8;
@@ -201,7 +205,7 @@
             this.PBoxMonster3.BackColor = System.Drawing.Color.Transparent;
             this.PBoxMonster3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PBoxMonster3.BackgroundImage")));
             this.PBoxMonster3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PBoxMonster3.Location = new System.Drawing.Point(711, 84);
+            this.PBoxMonster3.Location = new System.Drawing.Point(711, 68);
             this.PBoxMonster3.Name = "PBoxMonster3";
             this.PBoxMonster3.Size = new System.Drawing.Size(227, 334);
             this.PBoxMonster3.TabIndex = 9;
@@ -212,17 +216,26 @@
             this.PBoxMonster2.BackColor = System.Drawing.Color.Transparent;
             this.PBoxMonster2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PBoxMonster2.BackgroundImage")));
             this.PBoxMonster2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PBoxMonster2.Location = new System.Drawing.Point(245, 84);
+            this.PBoxMonster2.Location = new System.Drawing.Point(245, 68);
             this.PBoxMonster2.Name = "PBoxMonster2";
             this.PBoxMonster2.Size = new System.Drawing.Size(227, 334);
             this.PBoxMonster2.TabIndex = 10;
             this.PBoxMonster2.TabStop = false;
             // 
-            // Form1
+            // TxtBoxMain
+            // 
+            this.TxtBoxMain.Location = new System.Drawing.Point(12, 428);
+            this.TxtBoxMain.Multiline = true;
+            this.TxtBoxMain.Name = "TxtBoxMain";
+            this.TxtBoxMain.Size = new System.Drawing.Size(1159, 82);
+            this.TxtBoxMain.TabIndex = 11;
+            // 
+            // C_Sharp_Final
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 628);
+            this.ClientSize = new System.Drawing.Size(1194, 646);
+            this.Controls.Add(this.TxtBoxMain);
             this.Controls.Add(this.PBoxMonster2);
             this.Controls.Add(this.PBoxMonster3);
             this.Controls.Add(this.PBoxMonster1);
@@ -234,7 +247,7 @@
             this.Controls.Add(this.PBoxBackground);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "C_Sharp_Final";
             this.Text = "Ars Uberia; The Uberian Chronicles or The Diaries of Dartanias Pendleton III";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -267,6 +280,7 @@
         private System.Windows.Forms.PictureBox PBoxMonster1;
         private System.Windows.Forms.PictureBox PBoxMonster3;
         private System.Windows.Forms.PictureBox PBoxMonster2;
+        private System.Windows.Forms.TextBox TxtBoxMain;
     }
 }
 

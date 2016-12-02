@@ -40,5 +40,15 @@ namespace C_Sharp_Final_DGM_1600
         string shield = "none";
         string weapon = "fists";
 
+        public string ChestArmor { get; set; }
+        public string HeadArmor { get; set; }
+        public string LegArmor { get; set; }
+        public string ShoulderArmor { get; set; }
+        public string FootArmor { get; set; }
+        public string Fetish { get; set; }
+        public string Charm { get; set; }
+        public string Shield { get; set; }
+        public string Weapon { get; set; }
+
     }
 }

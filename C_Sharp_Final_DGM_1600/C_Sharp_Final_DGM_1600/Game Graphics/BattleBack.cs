@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace C_Sharp_Final_DGM_1600
 {
-    public partial class Form1 : Form
+    public partial class C_Sharp_Final : Form
     {
-        public Form1()
+        private PlayerCharacter wystan;
+        
+
+        public C_Sharp_Final()
         {
             InitializeComponent();
+            PlayerCharacter wystan = new PlayerCharacter();
         }
 
         //About message box displays developer information
@@ -39,6 +43,21 @@ namespace C_Sharp_Final_DGM_1600
         private void BoxMonster1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnAttack_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// Displays current equipment and gives an emboldening statement
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnFlailAbout_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"{wystan.Charm}");
         }
     }
 }

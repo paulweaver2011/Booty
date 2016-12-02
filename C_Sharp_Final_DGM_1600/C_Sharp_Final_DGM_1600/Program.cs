@@ -16,7 +16,7 @@ namespace C_Sharp_Final_DGM_1600
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new C_Sharp_Final());
         }
     }
 }

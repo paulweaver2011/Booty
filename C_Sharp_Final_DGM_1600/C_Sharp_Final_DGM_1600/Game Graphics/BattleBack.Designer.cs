@@ -30,172 +30,218 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.continueGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.soundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.MnuExitDropDown = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuAboutButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuExitButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuFileDropDown = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuNewGameButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuContinueGameButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuSettingsDropDown = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuSoundsButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.PBoxBackground = new System.Windows.Forms.PictureBox();
+            this.BtnAttack = new System.Windows.Forms.Button();
+            this.BtnDefend = new System.Windows.Forms.Button();
+            this.BtnMagic = new System.Windows.Forms.Button();
+            this.BtnItem = new System.Windows.Forms.Button();
+            this.BtnFlailAbout = new System.Windows.Forms.Button();
+            this.PBoxMonster1 = new System.Windows.Forms.PictureBox();
+            this.PBoxMonster3 = new System.Windows.Forms.PictureBox();
+            this.PBoxMonster2 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBoxBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBoxMonster1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBoxMonster3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBoxMonster2)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exitToolStripMenuItem,
-            this.fileToolStripMenuItem,
-            this.settingsToolStripMenuItem});
+            this.MnuExitDropDown,
+            this.MnuFileDropDown,
+            this.MnuSettingsDropDown});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1184, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // exitToolStripMenuItem
+            // MnuExitDropDown
             // 
-            this.exitToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem,
-            this.exitToolStripMenuItem1});
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.exitToolStripMenuItem.Text = "Exit";
+            this.MnuExitDropDown.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MnuAboutButton,
+            this.MnuExitButton});
+            this.MnuExitDropDown.Name = "MnuExitDropDown";
+            this.MnuExitDropDown.Size = new System.Drawing.Size(37, 20);
+            this.MnuExitDropDown.Text = "Exit";
             // 
-            // aboutToolStripMenuItem
+            // MnuAboutButton
             // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
-            this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            this.MnuAboutButton.Name = "MnuAboutButton";
+            this.MnuAboutButton.Size = new System.Drawing.Size(107, 22);
+            this.MnuAboutButton.Text = "About";
+            this.MnuAboutButton.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // exitToolStripMenuItem1
+            // MnuExitButton
             // 
-            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
-            this.exitToolStripMenuItem1.Text = "Exit";
-            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
+            this.MnuExitButton.Name = "MnuExitButton";
+            this.MnuExitButton.Size = new System.Drawing.Size(107, 22);
+            this.MnuExitButton.Text = "Exit";
+            this.MnuExitButton.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
-            // fileToolStripMenuItem
+            // MnuFileDropDown
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newGameToolStripMenuItem,
-            this.continueGameToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
+            this.MnuFileDropDown.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MnuNewGameButton,
+            this.MnuContinueGameButton});
+            this.MnuFileDropDown.Name = "MnuFileDropDown";
+            this.MnuFileDropDown.Size = new System.Drawing.Size(37, 20);
+            this.MnuFileDropDown.Text = "File";
             // 
-            // newGameToolStripMenuItem
+            // MnuNewGameButton
             // 
-            this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.newGameToolStripMenuItem.Text = "New Game";
-            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
+            this.MnuNewGameButton.Name = "MnuNewGameButton";
+            this.MnuNewGameButton.Size = new System.Drawing.Size(157, 22);
+            this.MnuNewGameButton.Text = "New Game";
+            this.MnuNewGameButton.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
             // 
-            // continueGameToolStripMenuItem
+            // MnuContinueGameButton
             // 
-            this.continueGameToolStripMenuItem.Name = "continueGameToolStripMenuItem";
-            this.continueGameToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.continueGameToolStripMenuItem.Text = "Continue Game";
+            this.MnuContinueGameButton.Name = "MnuContinueGameButton";
+            this.MnuContinueGameButton.Size = new System.Drawing.Size(157, 22);
+            this.MnuContinueGameButton.Text = "Continue Game";
             // 
-            // settingsToolStripMenuItem
+            // MnuSettingsDropDown
             // 
-            this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.soundToolStripMenuItem});
-            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.settingsToolStripMenuItem.Text = "Settings";
+            this.MnuSettingsDropDown.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MnuSoundsButton});
+            this.MnuSettingsDropDown.Name = "MnuSettingsDropDown";
+            this.MnuSettingsDropDown.Size = new System.Drawing.Size(61, 20);
+            this.MnuSettingsDropDown.Text = "Settings";
             // 
-            // soundToolStripMenuItem
+            // MnuSoundsButton
             // 
-            this.soundToolStripMenuItem.Name = "soundToolStripMenuItem";
-            this.soundToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
-            this.soundToolStripMenuItem.Text = "Sound";
+            this.MnuSoundsButton.Name = "MnuSoundsButton";
+            this.MnuSoundsButton.Size = new System.Drawing.Size(108, 22);
+            this.MnuSoundsButton.Text = "Sound";
             // 
-            // pictureBox1
+            // PBoxBackground
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1159, 478);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.PBoxBackground.Image = ((System.Drawing.Image)(resources.GetObject("PBoxBackground.Image")));
+            this.PBoxBackground.Location = new System.Drawing.Point(12, 27);
+            this.PBoxBackground.Name = "PBoxBackground";
+            this.PBoxBackground.Size = new System.Drawing.Size(1159, 478);
+            this.PBoxBackground.TabIndex = 1;
+            this.PBoxBackground.TabStop = false;
             // 
-            // button1
+            // BtnAttack
             // 
-            this.button1.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 511);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(227, 111);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Attack";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnAttack.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAttack.Location = new System.Drawing.Point(12, 511);
+            this.BtnAttack.Name = "BtnAttack";
+            this.BtnAttack.Size = new System.Drawing.Size(227, 111);
+            this.BtnAttack.TabIndex = 2;
+            this.BtnAttack.Text = "Attack";
+            this.BtnAttack.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // BtnDefend
             // 
-            this.button3.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(245, 511);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(227, 111);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Defend";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnDefend.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDefend.Location = new System.Drawing.Point(245, 511);
+            this.BtnDefend.Name = "BtnDefend";
+            this.BtnDefend.Size = new System.Drawing.Size(227, 111);
+            this.BtnDefend.TabIndex = 4;
+            this.BtnDefend.Text = "Defend";
+            this.BtnDefend.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BtnMagic
             // 
-            this.button2.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(478, 511);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(227, 111);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Magic";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnMagic.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMagic.Location = new System.Drawing.Point(478, 511);
+            this.BtnMagic.Name = "BtnMagic";
+            this.BtnMagic.Size = new System.Drawing.Size(227, 111);
+            this.BtnMagic.TabIndex = 5;
+            this.BtnMagic.Text = "Magic";
+            this.BtnMagic.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // BtnItem
             // 
-            this.button4.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(711, 511);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(227, 111);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Item";
-            this.button4.UseVisualStyleBackColor = true;
+            this.BtnItem.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnItem.Location = new System.Drawing.Point(711, 511);
+            this.BtnItem.Name = "BtnItem";
+            this.BtnItem.Size = new System.Drawing.Size(227, 111);
+            this.BtnItem.TabIndex = 6;
+            this.BtnItem.Text = "Item";
+            this.BtnItem.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // BtnFlailAbout
             // 
-            this.button5.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(944, 511);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(227, 111);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Flail About";
-            this.button5.UseVisualStyleBackColor = true;
+            this.BtnFlailAbout.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnFlailAbout.Location = new System.Drawing.Point(944, 511);
+            this.BtnFlailAbout.Name = "BtnFlailAbout";
+            this.BtnFlailAbout.Size = new System.Drawing.Size(227, 111);
+            this.BtnFlailAbout.TabIndex = 7;
+            this.BtnFlailAbout.Text = "Flail About";
+            this.BtnFlailAbout.UseVisualStyleBackColor = true;
+            // 
+            // PBoxMonster1
+            // 
+            this.PBoxMonster1.BackColor = System.Drawing.Color.Transparent;
+            this.PBoxMonster1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PBoxMonster1.BackgroundImage")));
+            this.PBoxMonster1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PBoxMonster1.Location = new System.Drawing.Point(478, 55);
+            this.PBoxMonster1.Name = "PBoxMonster1";
+            this.PBoxMonster1.Size = new System.Drawing.Size(227, 334);
+            this.PBoxMonster1.TabIndex = 8;
+            this.PBoxMonster1.TabStop = false;
+            this.PBoxMonster1.Click += new System.EventHandler(this.BoxMonster1_Click);
+            // 
+            // PBoxMonster3
+            // 
+            this.PBoxMonster3.BackColor = System.Drawing.Color.Transparent;
+            this.PBoxMonster3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PBoxMonster3.BackgroundImage")));
+            this.PBoxMonster3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PBoxMonster3.Location = new System.Drawing.Point(711, 84);
+            this.PBoxMonster3.Name = "PBoxMonster3";
+            this.PBoxMonster3.Size = new System.Drawing.Size(227, 334);
+            this.PBoxMonster3.TabIndex = 9;
+            this.PBoxMonster3.TabStop = false;
+            // 
+            // PBoxMonster2
+            // 
+            this.PBoxMonster2.BackColor = System.Drawing.Color.Transparent;
+            this.PBoxMonster2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PBoxMonster2.BackgroundImage")));
+            this.PBoxMonster2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PBoxMonster2.Location = new System.Drawing.Point(245, 84);
+            this.PBoxMonster2.Name = "PBoxMonster2";
+            this.PBoxMonster2.Size = new System.Drawing.Size(227, 334);
+            this.PBoxMonster2.TabIndex = 10;
+            this.PBoxMonster2.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 628);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PBoxMonster2);
+            this.Controls.Add(this.PBoxMonster3);
+            this.Controls.Add(this.PBoxMonster1);
+            this.Controls.Add(this.BtnFlailAbout);
+            this.Controls.Add(this.BtnItem);
+            this.Controls.Add(this.BtnMagic);
+            this.Controls.Add(this.BtnDefend);
+            this.Controls.Add(this.BtnAttack);
+            this.Controls.Add(this.PBoxBackground);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Ars Uberia; The Uberian Chronicles or The Diaries of Dartanias Pendleton III";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBoxBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBoxMonster1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBoxMonster3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBoxMonster2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,20 +250,23 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem continueGameToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem soundToolStripMenuItem;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.ToolStripMenuItem MnuExitDropDown;
+        private System.Windows.Forms.ToolStripMenuItem MnuAboutButton;
+        private System.Windows.Forms.ToolStripMenuItem MnuExitButton;
+        private System.Windows.Forms.ToolStripMenuItem MnuFileDropDown;
+        private System.Windows.Forms.ToolStripMenuItem MnuNewGameButton;
+        private System.Windows.Forms.ToolStripMenuItem MnuContinueGameButton;
+        private System.Windows.Forms.ToolStripMenuItem MnuSettingsDropDown;
+        private System.Windows.Forms.ToolStripMenuItem MnuSoundsButton;
+        private System.Windows.Forms.PictureBox PBoxBackground;
+        private System.Windows.Forms.Button BtnAttack;
+        private System.Windows.Forms.Button BtnDefend;
+        private System.Windows.Forms.Button BtnMagic;
+        private System.Windows.Forms.Button BtnItem;
+        private System.Windows.Forms.Button BtnFlailAbout;
+        private System.Windows.Forms.PictureBox PBoxMonster1;
+        private System.Windows.Forms.PictureBox PBoxMonster3;
+        private System.Windows.Forms.PictureBox PBoxMonster2;
     }
 }
 

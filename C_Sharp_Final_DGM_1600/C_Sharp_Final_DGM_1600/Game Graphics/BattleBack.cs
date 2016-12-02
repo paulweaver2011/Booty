@@ -34,5 +34,11 @@ namespace C_Sharp_Final_DGM_1600
         {
 
         }
+
+
+        private void BoxMonster1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

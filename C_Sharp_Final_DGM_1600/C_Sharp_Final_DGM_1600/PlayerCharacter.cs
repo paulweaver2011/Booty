@@ -26,5 +26,19 @@ namespace C_Sharp_Final_DGM_1600
         int wit = 0;
         //Wisdom
         int grasp = 0;
+        
+
+        //Equipment
+        string chestArmor = "nude";
+        string headArmor = "nude";
+        string legArmor = "nude";
+        string shoulderArmor = "nude";
+        string footArmor = "nude";
+        string fetish = "BDSM";
+        string charm = "likely";
+
+        string shield = "none";
+        string weapon = "fists";
+
     }
 }

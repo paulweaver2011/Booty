@@ -8,6 +8,13 @@ namespace C_Sharp_Final_DGM_1600
 {
     class Equipment
     {
+        PlayerCharacter wystan = new PlayerCharacter();
+
+        public Equipment()
+        {
+
+        }
+
         //Weapon Stats
         private int weaponPower = 0;
         private int defensePower = 0;

@@ -8,8 +8,13 @@ namespace C_Sharp_Final_DGM_1600
 {
     class PlayerCharacter
     {
+        public PlayerCharacter()
+        {
+
+        }
+        
         //Character stats
-            
+
         //Life
         int vim = 10;
         //Magic
@@ -19,7 +24,7 @@ namespace C_Sharp_Final_DGM_1600
         //Endurance
         int grit = 10;
         //Speed
-        int whiz = 10;
+        int gait = 10;
         //Charisma
         int allure = 10;
         //Intelligence
@@ -39,6 +44,15 @@ namespace C_Sharp_Final_DGM_1600
 
         string shield = "none";
         string weapon = "fists";
+
+        public int Vim { get; set; }
+        public int Pith { get; set; }
+        public int Vigor { get; set; }
+        public int Grit { get; set; }
+        public int Gait { get; set; }
+        public int Allure { get; set; }
+        public int Wit { get; set; }
+        public int Grasp { get; set; }
 
         public string ChestArmor { get; set; }
         public string HeadArmor { get; set; }

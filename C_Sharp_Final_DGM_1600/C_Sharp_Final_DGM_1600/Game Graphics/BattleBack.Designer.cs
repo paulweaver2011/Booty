@@ -157,7 +157,7 @@
             // 
             // BtnAttack
             // 
-            this.BtnAttack.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAttack.Font = new System.Drawing.Font("Tempus Sans ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAttack.Location = new System.Drawing.Point(12, 523);
             this.BtnAttack.Name = "BtnAttack";
             this.BtnAttack.Size = new System.Drawing.Size(227, 111);
@@ -168,7 +168,7 @@
             // 
             // BtnDefend
             // 
-            this.BtnDefend.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDefend.Font = new System.Drawing.Font("Tempus Sans ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDefend.Location = new System.Drawing.Point(245, 523);
             this.BtnDefend.Name = "BtnDefend";
             this.BtnDefend.Size = new System.Drawing.Size(227, 111);
@@ -178,7 +178,7 @@
             // 
             // BtnMagic
             // 
-            this.BtnMagic.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMagic.Font = new System.Drawing.Font("Tempus Sans ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMagic.Location = new System.Drawing.Point(478, 523);
             this.BtnMagic.Name = "BtnMagic";
             this.BtnMagic.Size = new System.Drawing.Size(227, 111);
@@ -188,7 +188,7 @@
             // 
             // BtnItem
             // 
-            this.BtnItem.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnItem.Font = new System.Drawing.Font("Tempus Sans ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnItem.Location = new System.Drawing.Point(711, 523);
             this.BtnItem.Name = "BtnItem";
             this.BtnItem.Size = new System.Drawing.Size(227, 111);
@@ -198,7 +198,7 @@
             // 
             // BtnFlailAbout
             // 
-            this.BtnFlailAbout.Font = new System.Drawing.Font("Outrun future", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnFlailAbout.Font = new System.Drawing.Font("Tempus Sans ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnFlailAbout.Location = new System.Drawing.Point(944, 523);
             this.BtnFlailAbout.Name = "BtnFlailAbout";
             this.BtnFlailAbout.Size = new System.Drawing.Size(227, 111);
@@ -243,6 +243,7 @@
             // 
             // TxtBoxMain
             // 
+            this.TxtBoxMain.Font = new System.Drawing.Font("Tempus Sans ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBoxMain.Location = new System.Drawing.Point(12, 428);
             this.TxtBoxMain.Multiline = true;
             this.TxtBoxMain.Name = "TxtBoxMain";

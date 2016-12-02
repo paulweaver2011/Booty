@@ -10,11 +10,7 @@ namespace C_Sharp_Final_DGM_1600
     {
         
 
-        public int FindPlayerDamage(int str, int weaponPower)
-        {
-            double playerDamage = str + weaponPower;
-            return weaponPower;
-        }
+        
     }
 
     

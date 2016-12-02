@@ -13,11 +13,16 @@ namespace C_Sharp_Final_DGM_1600
     public partial class C_Sharp_Final : Form
     {
         private PlayerCharacter wystan;
-        
+        private Equipment characterEquipment;
+        private CombatSystem combatSystem;
+
         public C_Sharp_Final()
         {
             InitializeComponent();
             PlayerCharacter wystan = new PlayerCharacter();
+            Equipment characterEquipment = new Equipment();
+            CombatSystem combatSystem = new CombatSystem();
+            
 
         }
 
@@ -47,7 +52,7 @@ namespace C_Sharp_Final_DGM_1600
 
         private void BtnAttack_Click(object sender, EventArgs e)
         {
-
+            TxtBoxMain.Text = ("You strike out at your enemies with vigor!");
         }
 
         /// <summary>

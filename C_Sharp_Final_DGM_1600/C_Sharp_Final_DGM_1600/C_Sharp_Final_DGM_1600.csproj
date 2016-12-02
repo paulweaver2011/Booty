@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Equipment.cs" />
     <Compile Include="Game Graphics\BattleBack.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,6 +54,7 @@
       <DependentUpon>BattleBack.cs</DependentUpon>
     </Compile>
     <Compile Include="Game Graphics\Combat.cs" />
+    <Compile Include="Game Graphics\CombatSystem.cs" />
     <Compile Include="PlayerCharacter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

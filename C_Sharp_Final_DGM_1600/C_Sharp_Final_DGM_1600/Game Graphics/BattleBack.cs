@@ -22,10 +22,6 @@ namespace C_Sharp_Final_DGM_1600
 
         public C_Sharp_Final()
         {
-            soundPlayer.SoundLocation = "Main Battle Theme.mp3";
-
-            
-
             InitializeComponent();
             PlayerCharacter wystan = new PlayerCharacter();
             Equipment characterEquipment = new Equipment();
@@ -84,7 +80,7 @@ namespace C_Sharp_Final_DGM_1600
         /// <param name="e"></param>
         private void onToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            soundPlayer.Play();
+
         }
 
         /// <summary>
@@ -106,7 +102,7 @@ namespace C_Sharp_Final_DGM_1600
         //Turns music off
         private void BtnSoundOff_Click(object sender, EventArgs e)
         {
-            soundPlayer.Stop();
+           
         }
     }
 }

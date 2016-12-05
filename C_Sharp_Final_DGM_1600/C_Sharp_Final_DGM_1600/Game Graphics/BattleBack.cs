@@ -23,7 +23,6 @@ namespace C_Sharp_Final_DGM_1600
             Equipment characterEquipment = new Equipment();
             CombatSystem combatSystem = new CombatSystem();
             
-
         }
 
         //About message box displays developer information

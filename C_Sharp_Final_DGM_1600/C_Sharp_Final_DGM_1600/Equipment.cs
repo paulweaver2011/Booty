@@ -10,6 +10,9 @@ namespace C_Sharp_Final_DGM_1600
     {
         PlayerCharacter wystan = new PlayerCharacter();
 
+        /// <summary>
+        /// Equipment invocation in self
+        /// </summary>
         public Equipment()
         {
 
@@ -22,8 +25,14 @@ namespace C_Sharp_Final_DGM_1600
         private int weaponLength = 0;
         private int critChance = 0;
 
+        /// <summary>
+        /// Accuracy
+        /// </summary>
         private double missChance = 0.05;
 
-        private string elementallAffinity = "Pure";
+        /// <summary>
+        /// Elemental affinity
+        /// </summary>
+        private string elementalAffinity = "Pure";
     }
 }

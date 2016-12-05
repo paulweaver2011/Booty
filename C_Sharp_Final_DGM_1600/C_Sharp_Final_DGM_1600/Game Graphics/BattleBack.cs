@@ -12,12 +12,20 @@ namespace C_Sharp_Final_DGM_1600
 {
     public partial class C_Sharp_Final : Form
     {
+        bool musicOnOff = true;
+
+        System.Media.SoundPlayer soundPlayer = new System.Media.SoundPlayer();
+
         private PlayerCharacter wystan;
         private Equipment characterEquipment;
         private CombatSystem combatSystem;
 
         public C_Sharp_Final()
         {
+            soundPlayer.SoundLocation = "Main Battle Theme.mp3";
+
+            
+
             InitializeComponent();
             PlayerCharacter wystan = new PlayerCharacter();
             Equipment characterEquipment = new Equipment();
@@ -46,7 +54,7 @@ namespace C_Sharp_Final_DGM_1600
 
         private void BoxMonster1_Click(object sender, EventArgs e)
         {
-
+            TxtBoxMain.Text = ("Don't click me, scum! Click your buttons!");
         }
 
         private void BtnAttack_Click(object sender, EventArgs e)
@@ -69,9 +77,36 @@ namespace C_Sharp_Final_DGM_1600
 
         }
 
+        /// <summary>
+        /// Turns music On
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void onToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            soundPlayer.Play();
+        }
 
+        /// <summary>
+        /// Picture box text
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void PBoxMonster2_Click(object sender, EventArgs e)
+        {
+            TxtBoxMain.Text = ("Don't click me, scum! Click your buttons!");
+        }
+
+        //Picture box text 
+        private void PBoxMonster3_Click(object sender, EventArgs e)
+        {
+            TxtBoxMain.Text = ("Don't click me, scum! Click your buttons!");
+        }
+
+        //Turns music off
+        private void BtnSoundOff_Click(object sender, EventArgs e)
+        {
+            soundPlayer.Stop();
         }
     }
 }

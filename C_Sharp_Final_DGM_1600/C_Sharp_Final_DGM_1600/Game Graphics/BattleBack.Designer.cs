@@ -135,7 +135,7 @@
             // BtnSoundOn
             // 
             this.BtnSoundOn.Name = "BtnSoundOn";
-            this.BtnSoundOn.Size = new System.Drawing.Size(152, 22);
+            this.BtnSoundOn.Size = new System.Drawing.Size(91, 22);
             this.BtnSoundOn.Text = "On";
             this.BtnSoundOn.Click += new System.EventHandler(this.onToolStripMenuItem_Click);
             // 
@@ -144,6 +144,7 @@
             this.BtnSoundOff.Name = "BtnSoundOff";
             this.BtnSoundOff.Size = new System.Drawing.Size(152, 22);
             this.BtnSoundOff.Text = "Off";
+            this.BtnSoundOff.Click += new System.EventHandler(this.BtnSoundOff_Click);
             // 
             // PBoxBackground
             // 
@@ -229,6 +230,7 @@
             this.PBoxMonster3.Size = new System.Drawing.Size(227, 334);
             this.PBoxMonster3.TabIndex = 9;
             this.PBoxMonster3.TabStop = false;
+            this.PBoxMonster3.Click += new System.EventHandler(this.PBoxMonster3_Click);
             // 
             // PBoxMonster2
             // 
@@ -240,6 +242,7 @@
             this.PBoxMonster2.Size = new System.Drawing.Size(227, 334);
             this.PBoxMonster2.TabIndex = 10;
             this.PBoxMonster2.TabStop = false;
+            this.PBoxMonster2.Click += new System.EventHandler(this.PBoxMonster2_Click);
             // 
             // TxtBoxMain
             // 

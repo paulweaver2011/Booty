@@ -8,12 +8,13 @@ namespace C_Sharp_Final_DGM_1600
 {
     class PlayerCharacter
     {
+        //Invocation
         public PlayerCharacter()
         {
 
         }
         
-        //Character stats
+        //Character stat variables
 
         //Life
         int vim = 10;
@@ -33,7 +34,7 @@ namespace C_Sharp_Final_DGM_1600
         int grasp = 10;
         
 
-        //Equipment
+        //Equipment variables
         string chestArmor = "nude";
         string headArmor = "nude";
         string legArmor = "nude";
@@ -45,6 +46,9 @@ namespace C_Sharp_Final_DGM_1600
         string shield = "none";
         string weapon = "fists";
 
+        /// <summary>
+        /// Int Getters and setters
+        /// </summary>
         public int Vim { get; set; }
         public int Pith { get; set; }
         public int Vigor { get; set; }
@@ -54,6 +58,9 @@ namespace C_Sharp_Final_DGM_1600
         public int Wit { get; set; }
         public int Grasp { get; set; }
 
+        /// <summary>
+        /// String getters and setters
+        /// </summary>
         public string ChestArmor { get; set; }
         public string HeadArmor { get; set; }
         public string LegArmor { get; set; }

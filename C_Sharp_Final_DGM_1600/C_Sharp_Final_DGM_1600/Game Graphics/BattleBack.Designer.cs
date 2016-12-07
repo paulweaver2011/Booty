@@ -128,7 +128,7 @@
             this.BtnSoundOn,
             this.BtnSoundOff});
             this.MnuSoundsButton.Name = "MnuSoundsButton";
-            this.MnuSoundsButton.Size = new System.Drawing.Size(152, 22);
+            this.MnuSoundsButton.Size = new System.Drawing.Size(108, 22);
             this.MnuSoundsButton.Text = "Sound";
             this.MnuSoundsButton.Click += new System.EventHandler(this.MnuSoundsButton_Click);
             // 
@@ -142,7 +142,7 @@
             // BtnSoundOff
             // 
             this.BtnSoundOff.Name = "BtnSoundOff";
-            this.BtnSoundOff.Size = new System.Drawing.Size(152, 22);
+            this.BtnSoundOff.Size = new System.Drawing.Size(91, 22);
             this.BtnSoundOff.Text = "Off";
             this.BtnSoundOff.Click += new System.EventHandler(this.BtnSoundOff_Click);
             // 
@@ -176,6 +176,7 @@
             this.BtnDefend.TabIndex = 4;
             this.BtnDefend.Text = "Defend";
             this.BtnDefend.UseVisualStyleBackColor = true;
+            this.BtnDefend.Click += new System.EventHandler(this.BtnDefend_Click);
             // 
             // BtnMagic
             // 

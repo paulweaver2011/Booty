@@ -23,6 +23,7 @@ namespace C_Sharp_Final_DGM_1600
         public C_Sharp_Final()
         {
             InitializeComponent();
+
             PlayerCharacter wystan = new PlayerCharacter();
             Equipment characterEquipment = new Equipment();
             CombatSystem combatSystem = new CombatSystem();
@@ -46,8 +47,7 @@ namespace C_Sharp_Final_DGM_1600
         {
 
         }
-
-
+        
         private void BoxMonster1_Click(object sender, EventArgs e)
         {
             TxtBoxMain.Text = ("Don't click me, scum! Click your buttons!");
@@ -96,13 +96,18 @@ namespace C_Sharp_Final_DGM_1600
         //Picture box text 
         private void PBoxMonster3_Click(object sender, EventArgs e)
         {
-            TxtBoxMain.Text = ("Don't click me, scum! Click your buttons!");
+            TxtBoxMain.Text = ("Hands off, plebeian scum!");
         }
 
         //Turns music off
         private void BtnSoundOff_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void BtnDefend_Click(object sender, EventArgs e)
+        {
+            TxtBoxMain.Text = ("You fiercely defend against the violent attacks of the enemy!");
         }
     }
 }

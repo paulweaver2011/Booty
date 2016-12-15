@@ -68,6 +68,11 @@ namespace C_Sharp_Final_DGM_1600
             TxtBoxMain.Text = ("You flail about helplessly!");
         }
 
+        /// <summary>
+        /// Makes sound for the game because sound is cool... currently not working...
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MnuSoundsButton_Click(object sender, EventArgs e)
         {
 
@@ -105,9 +110,25 @@ namespace C_Sharp_Final_DGM_1600
            
         }
 
+        /// <summary>
+        /// My wife is asking me crazy questions! I have to go!
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnDefend_Click(object sender, EventArgs e)
         {
             TxtBoxMain.Text = ("You fiercely defend against the violent attacks of the enemy!");
+        }
+
+        /// <summary>
+        /// Button magic action hero!
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnMagic_Click(object sender, EventArgs e)
+        {
+            TxtBoxMain.Text = ("You fire magic missile into the darkness!");
         }
     }
 }
